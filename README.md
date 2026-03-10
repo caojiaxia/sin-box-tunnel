@@ -1,5 +1,5 @@
 ### Tunnel-Pro Serverless 节点方案
-本项目提供了一套轻量化、容器化、基于 Cloudflare Tunnel 和 Sing-box 的高效节点部署方案。它专为像 [Claw Cloud Run] (https://run.claw.cloud)这样的 Serverless 平台设计，支持自动化的部署流程，并能通过日志输出节点配置信息。
+本项目提供了一套轻量化、容器化、基于 Cloudflare Tunnel 和 Sing-box 的高效节点部署方案。它专为像 [Claw Cloud Run] (https://run.claw.cloud) 这样的 Serverless 平台设计，支持自动化的部署流程，并能通过日志输出节点配置信息。
 
 ### 特性 
 - 极致轻量：基于 Alpine Linux 构建，镜像体积小，启动速度快。
