@@ -1,4 +1,7 @@
 #!/bin/sh
+# 1. 强制确保目录存在 (核心修复)
+mkdir -p /etc/sing-box
+
 # 运行时变量检查
 U=${UUID:-$(cat /proc/sys/kernel/random/uuid)}
 P=${PATH_WS:-/Faibh1KZ}
