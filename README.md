@@ -17,8 +17,10 @@ services:
     restart: always
     environment:
       UUID: xxxxxx     #你的UUID
-      XPATH: /xxxxxx   #你的路径
       TUNNEL_TOKEN: xxxxxx    #你的隧道Token
+      DOMAIN: xxxxxx          #你的隧道域名
+      PATH_WS: xxxxxx         #自定义WS路径
+      BACKEND_PORT: xxxxxx    #内部服务端口
 ```
 
 ### 环境变量
