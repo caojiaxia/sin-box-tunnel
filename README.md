@@ -8,6 +8,19 @@
 - 日志即节点：自动在容器启动时生成节点信息和分享链接。
 - 完全解耦：代码 100% 开源且不含任何个人信息，通过环境变量注入配置
 
+### Docker-compose配置
+```
+services:
+  sin-box-tunnel:
+    image: ghcr.io/caojiaxia/sin-box-tunnel:latest
+    container_name: sin-box-tunnel
+    restart: always
+    environment:
+      UUID: xxxxxx     #你的UUID
+      XPATH: /xxxxxx   #你的路径
+      TUNNEL_TOKEN: xxxxxx    #你的隧道Token
+```
+
 ### 环境变量
 
 | 变量名      |   作用                    | 示例    |
