@@ -20,7 +20,7 @@ services:
       TUNNEL_TOKEN: xxxxxx    #你的隧道Token
       DOMAIN: xxxxxx          #你的隧道域名
       PATH_WS: xxxxxx         #自定义WS路径
-      BACKEND_PORT: xxxxxx    #内部服务端口
+      BACKEND_PORT: xxxxxx    #自定义内部服务端口
 ```
 
 ### 环境变量
@@ -31,7 +31,7 @@ services:
 | DOMAIN        |（必填）你的隧道域名     |  www.abc.com   |
 | UUID          |（选填）你的UUID        |   6913e1f1...   |
 | PATH_WS       |（选填）自定义WS路径     |   /Faibh1KZkji   |
-| BACKEND_PORT    |（选填）内部服务端口    |   21522        |
+| BACKEND_PORT    |（选填）自定义内部服务端口    |   21522        |
 
 ### 验证与获取链接
 - 1.在平台的容器运行面板找到 Logs（日志）。
