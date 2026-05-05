@@ -8,6 +8,24 @@
 - 日志即节点：自动在容器启动时生成节点信息和分享链接。
 - 完全解耦：代码 100% 开源且不含任何个人信息，通过环境变量注入配置
 
+### 如何获取 Cloudflare Tunnel Token
+
+- 1.登录 [Cloudflare Dashboard](https://dash.cloudflare.com/login)。
+
+- 2.进入 Zero Trust -> Networks -> Tunnels。
+
+- 3.点击 Create a tunnel，选择 cloudflared。
+
+- 4.获得 Token 字符串，填入脚本提示处。
+
+- 5.sin-box的隧道端口`（格式 URL=127.0.0.1:随机端口)`必须与nginx一致 （前端是监听端口可随意输入,后端是nginx转发端口必须与隧道一致）
+
+**详细步骤：**
+
+<img width="1510" alt="image" src="https://github.com/fscarmen/sba/assets/62703343/bb2d9c43-3585-4abd-a35b-9cfd7404c87c">
+
+<img width="1638" alt="image" src="https://github.com/fscarmen/sing-box/assets/62703343/a4868388-d6ab-4dc7-929c-88bc775ca851">
+
 ### Docker-compose配置
 ```
 services:
