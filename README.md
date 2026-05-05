@@ -34,11 +34,25 @@ services:
     container_name: sin-box-tunnel
     restart: always
     environment:
-      UUID: xxxxxx            #你的UUID
-      TUNNEL_TOKEN: xxxxxx    #你的隧道Token
-      DOMAIN: xxxxxx          #你的隧道域名
-      PATH_WS: xxxxxx         #自定义WS路径
-      BACKEND_PORT: xxxxxx    #自定义内部服务端口
+      - UUID=你的UUID
+      - TUNNEL_TOKEN=你的Cloudflare隧道Token
+      - DOMAIN=你的隧道域名
+      - PATH_WS=/自定义路径          
+      - BACKEND_PORT=21522          # 内部服务端口（当部署到VPS服务器上时可以忽略）
+      - NODE_NAME=My-Custom-Node    # 选填，用于日志显示的备注(当部署到VPS服务器上时建议填上，方便提取节点链接）
+    # 为了防止日志过大，建议保留日志管理
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+```
+### 在VPS服务器提取节点链接的方法：
+
+**当部署成功后，在服务器终端输入以下命令：**
+
+```
+docker logs -f sin-box-tunnel
 ```
 
 ### 环境变量
