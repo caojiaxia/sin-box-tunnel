@@ -40,7 +40,7 @@ services:
       - PATH_WS=/自定义路径          
       - BACKEND_PORT=21522          # 内部服务端口（当部署到VPS服务器上时可以忽略）
       - NODE_NAME=My-Custom-Node    # 选填，用于日志显示的备注(当部署到VPS服务器上时建议填上，方便提取节点链接）
-    # 为了防止日志过大，建议保留日志管理
+    # 为了防止日志过大，必要日志管理配置
     logging:
       driver: "json-file"
       options:
