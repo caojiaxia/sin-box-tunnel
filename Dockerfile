@@ -41,8 +41,7 @@ echo "============================================"\n\
 exec /usr/local/bin/cloudflared tunnel --no-autoupdate run --token ${TUNNEL_TOKEN}' > /entrypoint.sh && \
     chmod +x /entrypoint.sh
 
-ENV TUNNEL_TOKEN="" \
-    DOMAIN="" \
+ENV DOMAIN="" \
     UUID="" \
     PATH_WS="/Faibh1KZ" \
     BACKEND_PORT="21522"
